@@ -78,7 +78,7 @@ if(isset($transititems) && !empty($transititems)){
                                     
                                     <!--- Text to click to add another item to transaction-->
                                     <div class="row">
-                                    <div class="col-sm-3 form-group-sm" id="coba">
+                                        <div class="col-sm-3 form-group-sm" id="coba">
                                             <label for="modeOfPayment">Nama Bagian</label>
                                             <select class="form-control checkField" id="custName" onchange="autofocusbarcode(this);">
                                                 <option value="">---</option>
@@ -88,6 +88,10 @@ if(isset($transititems) && !empty($transititems)){
                                                 <?php } } ?>
                                             </select>
                                             <span class="help-block errMsg" id="custNameErr"></span>
+                                        </div>
+                                        <div class="col-sm-3 form-group-sm">
+                                            <label for="discount">Nomor Berita Acara</label>
+                                            <input type="text" id="discountValue" class="form-control">
                                         </div>
                                     </div>
 
@@ -100,7 +104,7 @@ if(isset($transititems) && !empty($transititems)){
                                         
                                         <br class="visible-xs">
                                         
-                                        <div class="col-sm-2 form-group-sm">
+                                        <!-- <div class="col-sm-2 form-group-sm">
                                             <input type="text" id="nilaibarcode" class="form-control" placeholder="Barcode" autofocus>
                                             <script type="text/javascript">
                                             $(document).ready(function(){
@@ -135,7 +139,7 @@ if(isset($transititems) && !empty($transititems)){
                                             </script>
                                             <input type="text" id="barcodeText" class="form-control" placeholder="Code Barang" style="display: none">
                                             <span class="help-block errMsg" id="itemCodeNotFoundMsg"></span>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <!-- End of text to click to add another item to transaction-->
                                     <br>
